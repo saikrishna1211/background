@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .md {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+        }
+
+        img {
+            height: 100%;
+            width: 90%;
+        }
+
+        @media screen and (min-width: 768px) {
+            md {
+                gap: 5px;
+                display: grid;
+                grid-template-areas:
+                    "area1 area2 area3"
+                    "area4 area2 area5"
+                    "area6 area7 area8";
+            }
+        }
+
+        @media screen and (min-width:375px) and (max-width:767px) {
+            .md {
+                display: grid;
+                gap: 10px;
+                grid-template-areas:
+                    "area1 area2 area3"
+                    "area4 area2 area5"
+                    "area6 area7 area8";
+            }
+        }
+
+        .item1 {
+            grid-area: area1;
+        }
+
+        .item2 {
+            grid-area: area2;
+        }
+
+        .item3 {
+            grid-area: area3;
+        }
+
+        .item4 {
+            grid-area: area4;
+        }
+
+        .item5 {
+            grid-area: area5;
+        }
+
+        .item6 {
+            grid-area: area6;
+        }
+
+        .item7 {
+            grid-area: area7;
+        }
+
+        .item8 {
+            grid-area: area8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="md">
+        <img src="../Images1/Image10.jpg" alt="" class="item item1">
+        <img src="../Images1/Image9.jpg" alt="" class="item item2">
+        <img src="../Images1/Image8.jpg" alt="" class="item item3">
+        <img src="../bahubali_01.jpg" alt="" class="item item4">
+        <img src="../Bahubali_02.jpeg" alt="" class="item item5">
+        <img src="../Images1/Image7.jpg" alt="" class="item item6">
+        <img src="../kalki.jpeg" alt="" class="item item7">
+        <img src="../sahoo.jpeg" alt="" class="item item8">
+    </div>
+</body>
+
+</html>
